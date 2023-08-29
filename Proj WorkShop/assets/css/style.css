@@ -1,0 +1,220 @@
+:root{
+  --primario:#009688;
+  --terceiro:#fff;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*HEADER  TOP*/
+#header-top {
+  background-color: var(--primario);
+  color:#fff;
+}
+
+ul.header-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+ul.header-info a {
+  display: block;
+  font-size: 0.37cm;
+  padding: 7px 15px;
+  color: var(--terceiro);
+  align-items: center;
+}
+
+ul.header-info.info-right a {
+  font-size: 0.4cm;
+}
+
+/*HEADER*/
+
+/*CABEÇALHO - HEADER*/
+.cabecalho {
+  background: #fff;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: 2px solid var(--primario);
+}
+
+.cabecalho-fixo {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  border-bottom: none;
+  box-shadow: 0px 5px 4px -3px rgb(0 0 0 / 25%);
+  padding: 20px;
+  transition: linear all 0.5s;
+}
+
+#header #barraNavegacao .navbar-nav .nav-item .nav-link {
+  color: var(--quarta);
+  padding: 0.4cm;
+  border-bottom: 2px solid transparent;
+  transition: linear all 0.4s;
+}
+
+#header #barraNavegacao .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primario);
+  border-bottom: 2px solid var(--primario);
+}
+
+
+/*BANNER*/
+#header #barraNavegacao .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primario);
+  border-bottom: 2px solid var(--primario);
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+
+/* LOGO */
+#header #logo {
+  text-transform: uppercase;
+  color: var(--quarta);
+}
+
+#barraNavegacao .sub-menu {
+  border: 0px;
+  background: var(--primario);
+  color: #fff;
+  padding: 0px;
+}
+
+#barraNavegacao .sub-menu li a {
+  font-size: 0.38cm;
+  color: #fff;
+  padding: 15px;
+}
+
+#barraNavegacao .sub-menu li a:hover {
+  background: var(--quarta);
+
+}
+
+.navbar-light .navbar-toggler {
+
+  border: 1px solid var(--quarta) !important;
+  background: transparent;
+}
+
+button.navbar-toggler i {
+  color: var(--primario);
+  font-size: 0.70cm;
+}
+
+/*CAROUSEL PRINCIPAL*/
+.carousel .carousel-inner .carousel-item {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  bottom: 20%;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption .carousel-texto h2 {
+  text-transform: uppercase;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption .carousel-texto p {
+  font-size: 0.37;
+  font-weight: 100;
+}
+
+.carousel-btn {
+  border: 1px solid #fff;
+  color: var(--terceiro);
+  padding: 0.2cm 0.5cm;
+}
+
+.carousel-btn:hover {
+  border: 1px solid var(--terceiro);
+  color: var(--primario);
+  padding: 0.2cm 0.6cm;
+  background-color: var(--terceiro);
+}
+
+.slide_01:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}
+
+.slide_02:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/slider_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.slide_03:before {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/slider_03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.carousel-footer {
+  background: var(--primario);
+  padding: 0.2cm 0cm;
+  margin-bottom: 20px;
+}
+
+.carousel-footer h4 {
+  color: var(--terceiro);
+  font-size: 16pt;
+  font-weight: 500;
+}
+
+.carousel-footer p {
+  color: var(--terceiro);
+  font-size: 11pt;
+  font-weight: 100;
+}
+
+.carousel-footer-btn {
+  color: var(--terceiro);
+  font-size: 10pt;
+  font-weight: 600;
+  border: 2px solid var(--terceiro);
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-top: 17px;
+  transition: all linear 0.6s;
+}
+
+.carousel-footer-btn:hover {
+  color: var(--primario);
+  background: var(--terceiro);
+}
+
+.border-radius {
+  border-radius: 20px;
+}
+
+/* carousel footer */
+.carousel-footer {
+  padding: 20px 0px;
+}

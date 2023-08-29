@@ -1,233 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lua-Deira Business</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-    <header id="banner">
-          <img src="img/logo_deira.jpg" alt="Logotipo da barbearia" class="logo">
-          <div class="bannertxt">
-            <p>Lua-Deira Business Apresenta</p><br>
-            <h3>Iº WORKSHOP DE COMPLIANCE, COM TEMA:</h3><br>
-            <h1>A ÉTICA E O COMPLIANCE COMO FACTORES DE </h1>
-            <h1>ÓSPERIDADE E SUSTENTABILIDADE DAS ORGANIZAÇÕES</h1>
-            <div class="bannerbtn">
-                <a href="formInscricao.html"><span></span> Inscrição</a>
-                <a href="formapoio.html"><span></span> Podes Apoiar</a>
-              </div>
-          </div>
-        
+    <div id="geral">
+
+        <!--HEADER TOP-->
+        <div id="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <ul class="header-info info-left">
+                            <li><a href=""><i class="fa fa-phone"></i> +244 923089502</a></li>
+                            <li><a href=""><i class="fa fa-clock-o"></i> <time>8h a 16h</time> </a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <ul class="header-info info-right justify-content-end">
+                            <li>
+                                <a href="https://web.facebook.com/orlando.sadraqui" target="_blank"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER-->
+        <header id="header" class="navbar navbar-expand-lg cabecalho navbar-light">
+            <div class="container">
+                <a href="">
+                    <h1 class="navbar-brand" id="logo"><span>Lua-Deira</span></h1>
+                </a>
+                <button type="button" class=" navbar-toggler " data-bs-toggle="collapse"
+                    data-bs-target="#barraNavegacao">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end " id="barraNavegacao">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link link-activo">Inicio</a></li>
+                        <li class="nav-item"><a href="galeria.html" class="nav-link">Objetivo</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Oradores</a></li>
+                        <li class="nav-item"><a href="galeria.html" class="nav-link">Informações</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-    <section id="ladonav">
-        <nav>
-            <ul>
-                <li><a href="#banner">ÍNICIO</a></li>
-                <li><a href="#colaboradores">Objectivo</a></li>
-                <li><a href="#servico">Oradores</a></li>
-                <li><a href="#Comentarios">Informcões</a></li>
-                <li><a href="#footer">Contactos</a></li>
-            </ul>
-        </nav>
-    </section>
-    <div id="menubtn" >
-        <img src="img/menu.png" alt="imagem do menu" id="menu">
+
+        <!-- BANNER-->
+        <!---SILDER PRINCIPAL--->
+        <main id="container-slide" class="margem">
+            <div class="carousel slide" id="slideMain" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active slide_01">
+                        <div class="carousel-caption">
+                            <div class="carousel-texto aos-init" data-aos="fade-right" data-aos-easing="linear"
+                                data-aos-duration="1500">
+                                <p>Lua-Deira Business Apresenta</p>
+                                <h2>Iº WORKSHOP DE COMPLIANCE, COM TEMA:</h2>
+                                <p> <br />
+                                    A ética e o compliance como factores de Ósperidade e sustentabilidade das
+                                    organizações
+                                </p>
+                                <div class="mt-5">
+                                    <a href="" class="btn carousel-btn" 
+                                        type="button" data-bs-toggle="modal" data-bs-target="#formularioInscricaoModal">Inscrição</a>
+                                    <a href="" class="btn carousel-btn">Podes apoiar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide_02">
+                        <div class="carousel-caption">
+                            <div class="carousel-texto aos-item">
+                                <h2> Titulo</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, non porro 2.</p>
+                                <div class="mt-3">
+                                    <a href="" class="btn carousel-btn">Inscrição</a>
+                                    <a href="" class="btn carousel-btn">Podes apoiar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item slide_03">
+                        <div class="carousel-caption">
+                            <div class="carousel-texto">
+                                <h2>Titulo</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, non porro 3.</p>
+                                <a href="" class="btn carousel-btn">Saber Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="carousel-control-prev" data-bs-slide="prev"
+                        data-bs-target="#slideMain">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button type="button" class="carousel-control-next" data-bs-slide="next"
+                        data-bs-target="#slideMain">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-footer">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-8">
+                            <div class="carousel-texto">
+                                <h4>Lorem ipsum dolor sit amet.</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet .
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <a href="contacto.html"
+                                class="btn carousel-footer-btn align-items-center border-radius">Contacto
+                                Os</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
 
     </div>
 
-    <section id="colaboradores">
-        <div class="titulo">
-            <p>Junta-se Ao Evento</p>
-            <h1>Por que Participar No Evento?</h1>
-            
-        </div>
-        <div class="colcaixa">
-            <div class="col">
-                <h1>OBJETIVOS DO PRESENTE WORKSHOP</h1>
-                <div class="coldescri">
-                    <div class="colicon">
-                        <img src="img/iconshield.png" alt="icon" class="imgicon">
-                    </div>
-                    <div class="coltexto">
-                        <p>Este evento tem como principais objectivos <strong>sensibilizar e fomentar a compreensão e interiorização</strong> 
-                            de uma cultura de Compliance em contexto empresarial e organizacional e contribuir   
-                            para a prática de uma gestão mais eficiente e eficaz de acordo com os padrões internacionais de ética e da governance.
-                        </p>
-                    </div>
-                </div>  
-                <h1>PÚBLICO-ALVO</h1>
-                <div class="coldescri">
-                    <div class="colicon">
-                        <img src="img/reservaimg.png" alt="icon" class="imgicon">
-                    </div>
-                    <div class="coltexto"> 
-                        <p>Profissionais das áreas <strong>Jurídica, Compliance, Auditoria, Controles Internos, Recursos Humanos, 
-                            Economia, Administração, Contabilidade Empresários, Fornecedores, Prestadores de Serviço,
-                            profissionais que tenham interesse em atuar na área de compliance, e áreas afins.</strong>
-                        </p>
-                    </div>
-                </div>  
-                <h1>FASES DO DECURSO DO WORKSHOP</h1>
-                <div class="coldescri">
-                    <div class="colicon">
-                        <img src="img/pagamento.png" alt="icon" class="imgicon">
-                    </div>
-                    <div class="coltexto">
-                            
-                        <p>Quanto as fases do decurso, o workshop será realizado num formato aberto 
-                            <strong>contendo três  painéis</strong> que serão apresentados por  tres ou mais preletores. 
-                            Neste sentido, segue a apresentação organizacional dos painéis:
-                        </p>
-                    </div>
-                </div>    
-            </div>
-            <div class="colimg">
-                <img src="img/logo_deira.jpg" alt="">
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--Serviços-->
-
-    <section id="servico">
-        <div class="titulo">
-            <p>Apresentação</p>
-            <h1>Prelectores</h1>
-        </div>
-        <div class="caixadeservico">
-            <div class="servicosimples">
-                <img src="img/prelectora1.jpg" alt="imagens de serviços">
-                <div class="hover"></div>
-                <div class="servicdesc">
-                    <h1>CHIRLENE LINO</h1>
-                    <hr>
-                    <p>Tema: A ÉTICA E DEONTOLOGIA PROFISSIONAL 
-                        COMO MARCAS DA ALTA PERFORMANCE
-                    </p>
+    <!-- ISSO É UM MODAL PARA REALIZAR A INSCRIÇÃO-->
+    <div class="modal fade" id="formularioInscricaoModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Formulario para realizar a inscrição</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, quam libero dignissimos aliquid
+                    eius similique, sequi quos qui nesciunt dolores nobis deleniti porro accusantium! Quo explicabo
+                    perspiciatis cumque ratione esse.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
                 </div>
             </div>
-            <div class="servicosimples">
-                <img src="img/prelector2.jpg" alt="imagens de serviços">
-                <div class="hover"></div>
-                <div class="servicdesc">
-                    <h1>ALCIDES CHIVANGU</h1>
-                    <hr>
-                    <p>Tema: AGENDA 2030 - COMO CONTRIBUIR PARA 
-                        O DESENVOLVIMENTO SUSTENTAVEL? 
-                    </p>
-                </div>
-            </div>
-            <div class="servicosimples">
-                <img src="img/prelector3.jpg" alt="imagens de serviços">
-                <div class="hover"></div>
-                <div class="servicdesc">
-                    <h1>AMARAL EDUARDO</h1>
-                    <hr>
-                    <p>Tema: BENEFÍCIOS DO PROGRAMA DE COMPLIANCE PARA AS ORGANIZAÇÕES
-                    </p>
-                </div>
-            </div>           
-            <div class="servicosimples">
-                <img src="img/prelector3.jpg" alt="imagens de serviços">
-                <div class="hover"></div>
-                <div class="servicdesc">
-                    <h1>ANDREA MORENO</h1>
-                    <hr>
-                    <p>Tema: BENEFÍCIOS DO PROGRAMA DE COMPLIANCE PARA AS ORGANIZAÇÕES
-                    </p>
-                </div>
-            </div>
-
         </div>
-    </section>
-
-    <!--Testemunhas-->
-
-    <section id="Comentarios">
-        <div class="titulo">
-            <p>Informações</p>
-            <h1>Saiba mais sobre o Evento</h1>
-        </div>
-        <div class="comentarioslin">
-            <div class="comentarioscol">
-                <div class="cliente">
-                    <img src="img/img_bg_3.jpg" alt="imagens de Clientes">
-                    <div class="clienteinfo">
-                        <h4>Agenda Do Evento </h4><br><br>
-                        <small>@Data:15 de Setembro de 2023</small><br>
-                        <small>@Duração:04 Horas das 14: as 18 horas.</small><br>
-                        <small>@Com Direito:Certificado & Coffebreak</small><br>
-                        <small>@Investimento:Kz 50.000,00 por cada participante.</small><br>
-                    </div>
-                </div>
-                <p></p>
-            </div>
-            <div  class="comentarioscol">
-                <div class="cliente">
-                    <img src="img/img_bg_3.jpg" alt="imagens de Clientes">
-                    <div class="clienteinfo">
-                        <h4>Coordenadas Bancárias</h4><br><br>
-                        <small>@Nome: David Ester Moma</small>
-                        <small>@IBAN: AO06.0040.0000.0338.3246.1019.6</small>
-                        <small>@Investimento: Kz 50.000,00 por cada participante.</small>
-                    </div>
-                </div>
-                <p></p>
-            </div>
-            <div  class="comentarioscol">
-                <div class="cliente">
-                    <img src="img/img_bg_3.jpg" alt="imagens de Clientes">
-                    <div class="clienteinfo">
-                        <h4>Local Do Evento</h4>
-                        <small>@Aviso!!!!!!</small>
-                    </div>
-                </div>
-                <p>A informação do local onde será realizado o evento, ainda nao foi informado</p>
-            </div>
-        </div>
-
-    </section>
-
-    <footer id="footer">
-        <img src="img/logo_deira.jpg" alt="" class="imgfooter">
-        <div class="titulo">
-            <p>Contacto</p>
-            <h1>Visite-nos</h1>
-        </div>
-        <div class="foolinha">
-            <div class="linhaesqierda">
-                <h1>Horario de Atendimento</h1>
-                <p>Segunda à Sexta - 08h:00min às 16h:00min<img src="img/relogio.png" alt=""></p>
-                <p>Sabado - 08h:00min às 12h:00min<img src="img/relogio.png" alt=""></p>
-            </div>
-            <div class="linhadireita">
-                <h1>Contacto</h1>
-                <p>Sede: Luanda - Mutamba
-                    Rua: Pedro Felix Machado e Nova Rua 40 <img src="img/local.png" alt=""></p>
-                <p>www.lua-deira.site <img src="img/email.png" alt=""></p>
-                <p>Tel: +244 923089502 <img src="img/telefone.png" alt=""></p>
-            </div>
-        </div>
-        <div class="redessociais">
-            <img src="img/Facebook_15px.png" alt="">
-            <img src="img/Instagram_15px.png" alt="">
-            <img src="img/Twitter_15px.png" alt="">
-            <img src="img/YouTube_15px.png" alt="">
-            <p>&copy;copyright
-                lua_deira business / prestacão de serviço
-            </p>
-        </div>
-
-
-    </footer>
-
-
-    <script src="js/script.js"></script>
+    </div><!-- End Extra Large Modal-->
 </body>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
 </html>
