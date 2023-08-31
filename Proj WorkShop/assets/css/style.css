@@ -1,5 +1,5 @@
 :root{
-  --primario:#009688;
+  --primario:#009688;/*#ff6347 #009688  */
   --terceiro:#fff;
 }
 ul {
@@ -226,6 +226,7 @@ button.navbar-toggler i {
 
 #banner_two{
   background: url('../img/apply-bg.jpg');
+  background-attachment: fixed;
   padding: 80px 20px;
 }
 
@@ -237,13 +238,13 @@ button.navbar-toggler i {
   font-weight: 800;
     font-size: 59px;
     text-transform: uppercase;
-    text-shadow: 5px 3px #009688;
+    text-shadow: 5px 3px var(--primario);
 }
 .banner_two_right_box_title h3 {
   font-weight: 800;
   font-size: 59px;
   text-transform: uppercase;
-  text-shadow: 5px 3px #009688;
+  text-shadow: 5px 3px var(--primario);
 }
 .banner_two_right h4{
   font-size: 23px;
@@ -308,4 +309,75 @@ button.navbar-toggler i {
     letter-spacing: 1px;
     text-align: center;
     font-size: 15px;
+}
+
+
+/**SOBRE EVENTO**/
+#about{
+  background-attachment: fixed;
+  /*margin: 20px 0px;
+  background-attachment: fixed;
+  box-shadow: 0px 3px 10px #100f0f2b;
+  padding: 100px 0px;*/
+}
+ .card_banner{
+    box-shadow: 0px 3px 10px #100f0f2b;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+.title{
+    font-size: 2.3rem;
+    font-family: cursive;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.text_red{
+  color:var(--primario);
+}
+.paragrafo{
+ text-align: justify;
+  font-size: 0.37cm;
+  line-height: 0.7cm;
+  color: rgba(80, 80, 80, 0.8);
+}
+
+
+/*EVENTO CARD*/
+#cardEvento .card{
+      border-radius: 5px 5px 0 0;
+}
+#cardEvento img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#cardEvento{
+  margin:20px 0px ; 
+}
+#cardEvento  .card-caption {
+   background: #f4f4f4;
+   padding: 20px;
+ }
+#cardEvento .card-caption h4 {
+  font-size: 21px;
+  color: #000;
+  font-weight: 700;
+  text-align: left;
+}
+ #cardEvento .card-caption p {
+  font-size: 13px;
+  line-height: 26px;
+  text-align: left;
+  color: #000;
+}
+.btn-mais{
+  background: var(--primario);
+    color: var(--terceiro);
+    padding: 7px 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+.btn-mais:hover {
+  background: var(--terceiro);
+  color: var(--primario);
 }
